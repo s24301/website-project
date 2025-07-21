@@ -1,0 +1,180 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Introduction */
+
+section#introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "red-box image-box"
+    ". attribution-box";
+
+  margin-bottom: 5em;
+}
+
+div#red-box {
+  grid-area: red-box;
+
+  padding: 3em;
+
+  background-color: var(--red-dark);
+  color: var(--text-white);
+}
+
+h1.introduction-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 2em;
+
+  text-align: center;
+}
+
+h2.introduction-title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+
+  text-align: center
+}
+
+p.introduction-title {
+  font-size: 1em;
+
+  text-align: center;
+  text-align: justify;
+
+  margin: 3em 0
+}
+
+div#image-box {
+  grid-area: image-box;
+
+  background-image: url('../images/japanese.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 20%;
+}
+
+div#attribution-box {
+  grid-area: attribution-box;
+
+  font-size: small;
+  text-align: right;
+
+  padding-right: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  section#introduction {
+    display: block;
+
+    margin-bottom: 5em;
+  }
+
+  div#image-box {
+    display: none;
+  }
+
+  div#attribution-box {
+    display: none;
+  }
+
+}
+
+section#lists,
+section#about {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* Lists */
+
+section#lists {
+  display: flex;
+  flex-direction: column;
+}
+
+#lists h1 {
+  padding: 2em;
+  text-align: center;
+
+  color: var(--brown-light);
+
+  font-size: 2em;
+}
+
+div#lists-choice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  gap: 20px;
+
+  justify-content: center;
+}
+
+div.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor:pointer;
+}
+
+.list-item h3 {
+  padding: 1em;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+
+  color: var(--brown-dark);
+}
+
+.list-item img {
+  height: 200px;
+  width: 200px;
+
+  object-fit: cover;
+  border-radius: 50%;
+  border: dashed var(--red-dark) 2px;
+}
+
+/* About */
+
+section#about {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#about h1 {
+  padding: 2em;
+  max-width: 300px;
+  text-align: center;
+  margin: 100px auto auto auto;
+
+  color: var(--brown-light);
+
+  border-top: 2px dashed var(--brown-light);
+
+  font-size: large;
+}
+
+#about p {
+  font-size: smaller;
+  color: var(--brown-dark);
+
+  text-align: center;
+  text-align: justify;
+
+  margin: 0 3em 3em 3em;
+}
+
+#about img {
+  height: 200px;
+  width: 200px;
+
+  margin-bottom: 100px;
+}
