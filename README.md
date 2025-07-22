@@ -1,3 +1,17 @@
+# About Project
+This project was created to practice and polish my front-end web development and design skills.  
+The theme of the website is Japanese vocabulary, as learning the language is one of my personal interests.
+
+Technologies used: **HTML**, **CSS**, **JavaScript**
+
+# How to Open
+
+1. Clone or download this repository.
+2. Open the `index.html` file in your web browser (e.g. Chrome, Firefox).
+3. No server is required — the website runs entirely in the browser.
+
+If you're using VS Code, you can right-click `index.html` and select **"Open with Live Server"** for best results (especially for loading local assets correctly).
+
 # Photos Used
 
 ## HOME
